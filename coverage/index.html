@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Coverage Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .coverage-100 {
+            background-color: #a8e6a1; /* Green for fully covered */
+        }
+        .coverage-80 {
+            background-color: #ffec99; /* Yellow for partial coverage */
+        }
+        .coverage-0 {
+            background-color: #f99; /* Red for no coverage */
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Coverage Report</h1>
+        
+        <!-- Overall Coverage -->
+        <div class="overall-coverage">
+            <h2>Overall Test Coverage: 85%</h2>
+            <p>This indicates that 85% of the code has been tested.</p>
+        </div>
+        
+        <!-- Coverage Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Test Coverage</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="coverage-100">
+                    <td>app.dart</td>
+                    <td>100%</td>
+                    <td>Fully Covered</td>
+                </tr>
+                <tr class="coverage-80">
+                    <td>login.dart</td>
+                    <td>80%</td>
+                    <td>Partially Covered</td>
+                </tr>
+                <tr class="coverage-0">
+                    <td>profile.dart</td>
+                    <td>0%</td>
+                    <td>Not Covered</td>
+                </tr>
+                <tr class="coverage-100">
+                    <td>dashboard.dart</td>
+                    <td>100%</td>
+                    <td>Fully Covered</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Generated on: <strong>2024-11-25</strong></p>
+            <p>Coverage analysis provided by unit tests.</p>
+        </div>
+    </div>
+</body>
+</html>
